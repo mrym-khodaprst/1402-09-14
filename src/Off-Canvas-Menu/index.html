@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../dist/output.css">
+</head>
+
+<body>
+    <div class="sidenav h-full w-0 fixed z-10 top-0 left-0 bg-gray-900 pt-20 overflow-x-hidden ease-in-out duration-1000">
+        <a href="" class="closebtn absolute top-0 right-6 block text-4xl  ms-12 text-gray-500 hover:text-gray-300"
+            onclick="closenav()">&times;
+        </a>
+        <a class="py-2 ps-10 pe-24 text-2xl block duration-200 text-gray-500 hover:text-gray-300" href="">About</a>
+        <a class="py-2  ps-10 pe-24 text-2xl block duration-200 text-gray-500 hover:text-gray-300" href="">Services</a>
+        <a class="py-2  ps-10 pe-24 text-2xl block duration-200 text-gray-500 hover:text-gray-300" href="">Clients</a>
+        <a class="py-2  ps-10 pe-24 text-2xl block duration-200 text-gray-500 hover:text-gray-300" href="">Contact</a>
+    </div>
+    <div class="main p-4  duration-1000 ease-out">
+        <h2 class="text-4xl font-bold pb-4">Sidenav push</h2>
+        <span class="text-3xl cursor-pointer" onclick="openNav()">&#9776; open</span>
+    </div>
+    <script src="./script.js"></script>
+</body>
+<!-- transition for closing sidenav doesnt work -->
+</html>

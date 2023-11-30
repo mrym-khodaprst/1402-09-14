@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../dist/output.css">
+</head>
+
+<body class="m-2">
+    <h2 class="text-3xl mb-2">Tabs</h2>
+    <p class="mb-2">Click on the buttons inside the tabbed menu:</p>
+
+    <div class="tab bg-zinc-100 overflow-hidden border-2 border-zinc-200 ">
+        <button class="tablinks bg-inherit border-0 outline-none cursor-pointer py-3 px-4 text-lg transition duration-300 float-left hover:bg-zinc-200 " onclick="openCity(event, 'London')">London</button>
+        <button class="tablinks bg-inherit border-0 outline-none cursor-pointer py-3 px-4 text-lg transition duration-300 float-left hover:bg-zinc-200 " onclick="openCity(event, 'Paris')">Paris</button>
+        <button class="tablinks bg-inherit border-0 outline-none cursor-pointer py-3 px-4 text-lg transition duration-300 float-left hover:bg-zinc-200 " onclick="openCity(event, 'Tokyo')">Tokyo</button>
+    </div>
+
+    <div id="London" class="tabcontent hidden p-3 border-2 border-zinc-200 border-t-0">
+        <h3 class=" py-1 px-3 text-lg font-bold">London</h3>
+        <p class="p-3">London is the capital city of England.</p>
+    </div>
+
+    <div id="Paris" class="tabcontent hidden p-3 border-2 border-zinc-200 border-t-0">
+        <h3 class=" py-1 px-3 text-lg font-bold">Paris</h3>
+        <p class="p-3">Paris is the capital of France.</p>
+    </div>
+
+    <div id="Tokyo" class="tabcontent hidden p-3 border-2 border-zinc-200 border-t-0">
+        <h3 class=" py-1 px-3 text-lg font-bold">Tokyo</h3>
+        <p class="p-3">Tokyo is the capital of Japan.</p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

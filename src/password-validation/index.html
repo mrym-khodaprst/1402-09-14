@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../dist/output.css">
+</head>
+
+<body class="container m-auto">
+    <h3 class="text-xl font-bold mb-3">Password Validation</h3>
+    <p class="mb-3">Try to submit the form.</p>
+
+    <div class="bg-slate-100 p-5 rounded-md">
+        <form action="/action_page.php">
+            <label for="usrname">Username</label>
+            <input class="w-full p-3 border-2 border-gray-200 rounded-md mb-4 mt-2" type="text" id="usrname"
+                name="usrname" required>
+
+            <label for="psw">Password</label>
+            <input class="w-full p-3 border-2 border-gray-200 rounded-md mb-4 mt-2" type="password" id="psw" name="psw"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                required>
+
+            <input class="w-full p-3 border-2 border-gray-200 rounded-md mb-4 mt-2 bg-green-700 text-white "
+                type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div id="message" class=" bg-slate-100 relative p-5 mt-3">
+        <h3>Password must contain the following:</h3>
+        <p id="letter"
+            class="invalid text-red-700 py-3 px-9 text-lg before:relative before:-left-3 before:content-['✖']">A
+            <b>lowercase</b> letter
+        </p>
+        <p id="capital" class="invalid text-red-700 py-3 px-9 text-lg">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid text-red-700 py-3 px-9 text-lg">A <b>number</b></p>
+        <p id="length" class="invalid text-red-700 py-3 px-9 text-lg">Minimum <b>8 characters</b></p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

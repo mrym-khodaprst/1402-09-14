@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../dist/output.css">
+</head>
+
+<body>
+    <!-- <div class="before:absolute after:content-['✔'] text-white pe-1 pb-1 top-3 left-4"> -->
+
+    
+    <div id="myDIV" class="header bg-red-700 py-8 px-10 text-white text-center after:table after:clear-both after:content-['']">
+        <h2 class="text-3xl m-2">My To Do List</h2>
+        <input class="text-black m-0 w-3/4 p-3 float-left" type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn p-3 w-1/4 bg-zinc-300 text-zinc-700 float-left text-center cursor-pointer transition duration-300 hover:bg-zinc-400">Add</span>
+    </div>
+
+    <ul class="m-0 p-0" id="myUL">
+        <li class="cursor-pointer relative py-3 pe-2 ps-10 bg-zinc-200 text-lg transition duration-200 hover:bg-zinc-300 top-">Hit the gym</li>
+        <li class="cursor-pointer relative py-3 pe-2 ps-10 bg-zinc-200 text-lg transition duration-200 hover:bg-zinc-300" class="checked">Pay bills</li>
+        <li class="cursor-pointer relative py-3 pe-2 ps-10 bg-zinc-200 text-lg transition duration-200 hover:bg-zinc-300">Meet George</li>
+        <li class="cursor-pointer relative py-3 pe-2 ps-10 bg-zinc-200 text-lg transition duration-200 hover:bg-zinc-300">Buy eggs</li>
+        <li class="cursor-pointer relative py-3 pe-2 ps-10 bg-zinc-200 text-lg transition duration-200 hover:bg-zinc-300">Read a book</li>
+        <li class="cursor-pointer relative py-3 pe-2 ps-10 bg-zinc-200 text-lg transition duration-200 hover:bg-zinc-300">Organize office</li>
+    </ul>
+ <script src="./script.js"></script>
+</body>
+
+</html>
