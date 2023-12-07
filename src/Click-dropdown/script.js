@@ -4,13 +4,9 @@ function myFunction() {
 
 window.onclick = function (event) {
     if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("drop-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('!block')) {
-                openDropdown.classList.remove('!block');
-            }
+        const dropdowns = document.getElementsByClassName("drop-content");
+        if (dropdowns[0].classList.contains('!block')) {
+            dropdowns[0].classList.remove('!block');
         }
     }
 } 

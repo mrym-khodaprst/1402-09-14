@@ -693,6 +693,14 @@ video {
   margin-top: 1.25rem;
 }
 
+.me-4 {
+  margin-inline-end: 1rem;
+}
+
+.me-2 {
+  margin-inline-end: 0.5rem;
+}
+
 .\!block {
   display: block !important;
 }
@@ -958,6 +966,16 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .pb-1 {
