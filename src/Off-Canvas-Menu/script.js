@@ -1,11 +1,20 @@
-function openNav() {
-  document.querySelector(".sidenav").style.width = "250px";
-  document.querySelector(".main").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
+const openBtn = document.querySelector(".open-btn");
+const closeBtn = document.querySelector(".closebtn");
+const offCanvas = document.querySelector(".sidenav");
 
-function closeNav() {
-  document.querySelector(".sidenav").style.width = "0";
-  document.querySelector(".main").style.marginLeft= "0";
-  document.body.style.backgroundColor = "white";
-}
+openBtn.addEventListener('click', function (e) {
+  offCanvas.classList.remove('hidden');
+  offCanvas.classList.add("block");
+})
+closeBtn.addEventListener('click', function (e) {
+  offCanvas.classList.remove('block');
+  offCanvas.classList.add('hidden');
+})
+document.addEventListener('click', function (e) {
+    // if (!e.target.matches('.offCanvas') && e.target !== openBtn)
+    if (!offCanvas.contains(e.target) && e.target !== openBtn)
+ {
+            offCanvas.classList.remove('block');
+            offCanvas.classList.add('hidden');
+    }
+});
