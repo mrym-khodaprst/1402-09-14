@@ -9,35 +9,38 @@
 </head>
 
 <body>
-    <div class=" slideshow-container max-w-5xl relative m-auto">
+
+    <div class="slideshow-container max-w-5xl relative m-auto">
 
         <div class="mySlides hidden">
-            <div class="numbertext text-white text-sm py-2 px-3 top-0 absolute">1 / 3</div>
+            <div class="text-white top-0 absolute">1 / 3</div>
             <img src="img_nature_wide.jpg" style="width:100%">
-            <div class="text text-gray-100 text-xl absolute bottom-2 py-2 px-3 w-full text-center">Caption Text</div>
         </div>
 
         <div class="mySlides hidden">
-            <div class="numbertext text-white text-sm py-2 px-3 top-0 absolute">2 / 3</div>
+            <div class="text-white top-0 absolute">2 / 3</div>
             <img src="img_snow_wide.jpg" style="width:100%">
-            <div class="text text-gray-100 text-xl absolute bottom-2 py-2 px-3 w-full text-center">Caption Two</div>
         </div>
 
         <div class="mySlides hidden">
-            <div class="numbertext text-white text-sm py-2 px-3 top-0 absolute">3 / 3</div>
+            <div class="text-white top-0 absolute">3 / 3</div>
             <img src="img_mountains_wide.jpg" style="width:100%">
-            <div class="text text-gray-100 text-xl absolute bottom-2 py-2 px-3 w-full text-center">Caption Three</div>
         </div>
+
+        <a class="cursor-pointer absolute top-1/2 p-4 -mt-6 text-white " onclick="plusSlides(-1)">❮</a>
+        <a class="cursor-pointer absolute top-1/2 p-4 -mt-6 text-white right-0" onclick="plusSlides(1)">❯</a>
 
     </div>
     <br>
 
-    <div style="text-align:center">
-        <span class="dot h-4 w-4 mx-1 bg-gray-500 inline-block transition duration-700 ease-in-out rounded-full"></span>
-        <span class="dot h-4 w-4 mx-1 bg-gray-500 inline-block transition duration-700 ease-in-out rounded-full"></span>
-        <span class="dot h-4 w-4 mx-1 bg-gray-500 inline-block transition duration-700 ease-in-out rounded-full"></span>
+    <div class="text-center">
+        <span class="dot h-4 w-4 mx-1 bg-gray-500 inline-block transition duration-700 ease-in-out rounded-full" onclick="currentSlide(1)"></span>
+        <span class="dot h-4 w-4 mx-1 bg-gray-500 inline-block transition duration-700 ease-in-out rounded-full" onclick="currentSlide(2)"></span>
+        <span class="dot h-4 w-4 mx-1 bg-gray-500 inline-block transition duration-700 ease-in-out rounded-full" onclick="currentSlide(3)"></span>
     </div>
-
+    <button class="absolute top-0"><a href="../index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+      </svg></a></button>
     <script src="./script.js"></script>
 </body>
 
