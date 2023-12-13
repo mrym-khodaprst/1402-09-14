@@ -9,28 +9,27 @@
 </head>
 
 <body class="m-2">
-    <h2 class="text-3xl mb-2">Tabs</h2>
-    <p class="mb-2">Click on the buttons inside the tabbed menu:</p>
 
-    <div class="tab bg-zinc-100 overflow-hidden border-2 border-zinc-200 ">
-        <button class="tablinks bg-inherit border-0 outline-none cursor-pointer py-3 px-4 text-lg transition duration-300 float-left hover:bg-zinc-200 " onclick="openCity(event, 'London')">London</button>
-        <button class="tablinks bg-inherit border-0 outline-none cursor-pointer py-3 px-4 text-lg transition duration-300 float-left hover:bg-zinc-200 " onclick="openCity(event, 'Paris')">Paris</button>
-        <button class="tablinks bg-inherit border-0 outline-none cursor-pointer py-3 px-4 text-lg transition duration-300 float-left hover:bg-zinc-200 " onclick="openCity(event, 'Tokyo')">Tokyo</button>
+    <button class="px-4" onclick="openCity(event, 'London')">London</button>
+    <button class="px-4" onclick="openCity(event, 'Paris')">Paris</button>
+    <button class="px-4" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+    <button class="px-4"><a href="../index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                <path
+                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5" />
+            </svg></a></button>
+
+    <div id="London" class="tabcontent hidden p-3">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
     </div>
-
-    <div id="London" class="tabcontent hidden p-3 border-2 border-zinc-200 border-t-0">
-        <h3 class=" py-1 px-3 text-lg font-bold">London</h3>
-        <p class="p-3">London is the capital city of England.</p>
+    <div id="Paris" class="tabcontent hidden p-3">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
     </div>
-
-    <div id="Paris" class="tabcontent hidden p-3 border-2 border-zinc-200 border-t-0">
-        <h3 class=" py-1 px-3 text-lg font-bold">Paris</h3>
-        <p class="p-3">Paris is the capital of France.</p>
-    </div>
-
-    <div id="Tokyo" class="tabcontent hidden p-3 border-2 border-zinc-200 border-t-0">
-        <h3 class=" py-1 px-3 text-lg font-bold">Tokyo</h3>
-        <p class="p-3">Tokyo is the capital of Japan.</p>
+    <div id="Tokyo" class="tabcontent hidden p-3">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
     </div>
     <script src="./script.js"></script>
 </body>
