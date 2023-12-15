@@ -1,17 +1,23 @@
-
 function myFunction() {
-  // Get the text field
-  var copyText = document.getElementById("myInput");
+  const copyText = document.getElementById("myInput");
 
-  // Select the text field
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); // For mobile devices 
-  // select from word 0 to word 99999
+  if (navigator.clipboard) {
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
 
-  // Copy the text inside the text field
-  //it gives access to user's clipboard to read or write on it
-  navigator.clipboard.writeText(copyText.value);
-  
-  // Alert the copied text
-  alert("Copied the text: " + copyText.value);
+    navigator.clipboard.writeText(copyText.value)
+      .then(() => {
+        alert("Copied the text: " + copyText.value);
+      })
+      .catch((err) => {
+        console.error("Unable to copy text: ", err);
+        alert("Failed to copy text. Please try again.");
+      });
+  } else {
+    // Fallback for browsers that do not support Clipboard API
+    copyText.select();
+    document.execCommand("copy");
+
+    alert("Copied the text: " + copyText.value);
+  }
 }
