@@ -20,44 +20,39 @@ myInput.onkeyup = function () {
   // Validate lowercase letters
   var lowerCaseLetters = /[a-z]/g;
   if (myInput.value.match(lowerCaseLetters)) {
-    console.log("hello")
-    letter.classList.remove("invalid");
-    // letter.className.replace("text-green-700 before:relative before:-left-9 before:content-['✔']");
-    // letter.classList.add("");
-    // letter.classList.add("");
-    // letter.classList.add("");
-    // letter.classList.add(");
+    letter.classList.remove("text-red-700");
+    letter.classList.add("text-green-700");
   } else {
-    letter.classList.remove("valid");
-    letter.classList.add("invalid");
+    letter.classList.remove("text-green-700");
+    letter.classList.add("text-red-700");
   }
 
   // Validate capital letters
   var upperCaseLetters = /[A-Z]/g;
   if (myInput.value.match(upperCaseLetters)) {
-    capital.classList.remove("invalid");
-    capital.classList.add("valid");
+    capital.classList.remove("text-red-700");
+    capital.classList.add("text-green-700");
   } else {
-    capital.classList.remove("valid");
-    capital.classList.add("invalid");
+    capital.classList.remove("text-green-700");
+    capital.classList.add("text-red-700");
   }
 
   // Validate numbers
   var numbers = /[0-9]/g;
   if (myInput.value.match(numbers)) {
-    number.classList.remove("invalid");
-    number.classList.add("valid");
+    number.classList.remove("text-red-700");
+    number.classList.add("text-green-700");
   } else {
-    number.classList.remove("valid");
-    number.classList.add("invalid");
+    number.classList.remove("text-green-700");
+    number.classList.add("text-red-700");
   }
 
   // Validate length
   if (myInput.value.length >= 8) {
-    length.classList.remove("invalid");
-    length.classList.add("valid");
+    length.classList.remove("text-red-700");
+    length.classList.add("text-green-700");
   } else {
-    length.classList.remove("valid");
-    length.classList.add("invalid");
+    length.classList.remove("text-green-700");
+    length.classList.add("text-red-700");
   }
 }

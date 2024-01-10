@@ -1,4 +1,5 @@
-function myFunction() {
+document.getElementById("copyButton").addEventListener("click", copy);
+function copy() {
   const copyText = document.getElementById("myInput");
 
   if (navigator.clipboard) {

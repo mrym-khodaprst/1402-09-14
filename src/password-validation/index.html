@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="../../dist/output.css">
 </head>
 
-<body class="container m-auto">
+<body>
+    <a href="../index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+      </svg></a>
     <h3 class="text-xl font-bold mb-3">Password Validation</h3>
-    <p class="mb-3">Try to submit the form.</p>
-
-    <div class="bg-slate-100 p-5 rounded-md">
+    <div>
         <form action="/action_page.php">
             <label for="usrname">Username</label>
             <input class="w-full p-3 border-2 border-gray-200 rounded-md mb-4 mt-2" type="text" id="usrname"
@@ -32,12 +33,12 @@
     <div id="message" class=" bg-slate-100 relative p-5 mt-3">
         <h3>Password must contain the following:</h3>
         <p id="letter"
-            class="invalid text-red-700 py-3 px-9 text-lg before:relative before:-left-3 before:content-['✖']">A
+            class="text-red-700 py-3 px-9 text-lg ">A
             <b>lowercase</b> letter
         </p>
-        <p id="capital" class="invalid text-red-700 py-3 px-9 text-lg">A <b>capital (uppercase)</b> letter</p>
-        <p id="number" class="invalid text-red-700 py-3 px-9 text-lg">A <b>number</b></p>
-        <p id="length" class="invalid text-red-700 py-3 px-9 text-lg">Minimum <b>8 characters</b></p>
+        <p id="capital" class="text-red-700 py-3 px-9 text-lg">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="text-red-700 py-3 px-9 text-lg">A <b>number</b></p>
+        <p id="length" class="text-red-700 py-3 px-9 text-lg">Minimum <b>8 characters</b></p>
     </div>
 
     <script src="./script.js"></script>
